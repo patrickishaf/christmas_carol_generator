@@ -1,7 +1,12 @@
-fn main() {
-    println!("Hello, world!");
+use std::io;
 
-    for number in 1..13 {
+const NUMBER_OF_DAYS_OF_CHRISTMAS: usize = 12;
+
+fn main() {
+    println!("Hello, world! Welcome to The Christmas Carol Lyrics Game");
+    println!("I will now sing you 'The Twelve Days Of Christmas");
+
+    for number in 1..=NUMBER_OF_DAYS_OF_CHRISTMAS {
         generate_carol(number);
     }
 }
